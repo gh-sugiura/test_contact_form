@@ -10,7 +10,7 @@
 
 **管理者**
 * 管理者登録
-* ユーザー情報の閲覧
+* ユーザー情報とお問い合わせ内容の閲覧
 
 
 ## 環境構築
@@ -50,5 +50,5 @@
 
 
 ## URL
-*開発環境：http://localhost
-*phpMyAdmin：http://localhost:8080/
+* 開発環境：http://localhost
+* phpMyAdmin：http://localhost:8080/
