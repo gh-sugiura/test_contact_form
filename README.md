@@ -50,5 +50,10 @@
 
 
 ## URL
-* 開発環境：http://localhost
+* お問い合わせフォーム入力ページ：http://localhost/
+* お問い合わせフォーム確認ページ：http://localhost/confirm
+* サンクスページ：http://localhost/thanks
+* 管理画面：http://localhost/admin
+* ユーザー登録ページ：http://localhost/register
+* ログインページ：http://localhost/login
 * phpMyAdmin：http://localhost:8080/

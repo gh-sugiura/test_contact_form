@@ -9,16 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/sanitize.css')}}">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    @yield('css')
+    <link rel="stylesheet" href="{{asset('css/thanks.css')}}">
 </head>
 
 <body>
-    <header class="header">
-        <span class="header_text">FashionablyLate</span>
-    </header>
     <main>
-        @yield('content')
+        <div class="thanks">
+            <div class="back_text">Thank you</div>
+            <div class="text">お問い合わせありがとうございました</div>
+            <button class="home_button" type="button" onclick="location.href='/'">
+                HOME
+            </button>
+        </div>
     </main>
 </body>
 

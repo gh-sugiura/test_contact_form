@@ -1,0 +1,41 @@
+.thanks {
+    position: relative;
+}
+
+.back_text {
+    position: absolute;
+    top: 319px;
+    left: 66px;
+    font-family: Inika;
+    font-size: 280px;
+    font-weight: 400;
+    color: rgba(139, 121, 105, 0.05);
+    z-index: 0;
+}
+
+.text {
+    position: absolute;
+    top: 461px;
+    left: 501px;
+    font-family: Inika;
+    font-size: 30px;
+    font-weight: 700;
+    color: #8B7969;
+    z-index: 10;
+}
+
+.home_button {
+    position: absolute;
+    top: 555px;
+    left: 686px;
+    width: 140px;
+    height: 46px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #8B7969;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}

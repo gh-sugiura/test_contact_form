@@ -1,0 +1,123 @@
+.contact-form__content {
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Inika;
+    font-size: 35px;
+    color: #8B7969;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 51px;
+    width: 972px;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+}
+
+.form__label--item {
+    font-family: Inika;
+    font-size: 20px;
+    color: #8B7969;
+}
+
+.form__label--required {
+    font-family: Inika;
+    font-size: 20px;
+    color: red;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--name input{
+    width: 287.15px;
+    height: 38px;
+    font-size: 14px;
+    border: none;
+    background-color: #F4F4F4;
+    border-radius: 3px;
+    color: #8B7969;
+    appearance: none;
+}
+
+.form__input--gender,
+.form__input--gender input {
+    /* width: 500px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    height: 26px;
+    font-size: 14px;
+    border: none;
+    accent-color: #8B7969;
+    color: #8B7969;
+}
+
+.form__input--tel input {
+    width: 178.12px;
+    height: 38px;
+    font-size: 14px;
+    border: none;
+    background-color: #F4F4F4;
+    border-radius: 3px;
+    color: #8B7969;
+    appearance: none;
+}
+
+.form__input--category,
+.form__input--category option {
+    width: 331.68px;
+    height: 38px;
+    font-size: 14px;
+    border: none;
+    background-color: #F4F4F4;
+    border-radius: 3px;
+    color: #8B7969;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    width: 618.82px;
+    font-size: 14px;
+    border: none;
+    background-color: #F4F4F4;
+    border-radius: 3px;
+    color: #8B7969;
+    appearance: none;
+}
+
+.form__input--text input {
+    height: 38px;
+}
+
+.form__input--textarea textarea {
+    height: 129px;
+}
+
+.form__button {
+    /* width: 160px; */
+    /* height: 80px; */
+    padding: 40px;
+}
+
+.form__button-submit {
+    font-size: 20px;
+    background: #8B7969;
+    color: white;
+    font-family: Inika;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+}

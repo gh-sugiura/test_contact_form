@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/sanitize.css')}}">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app_admin.css')}}">
     @yield('css')
 </head>
 
 <body>
     <header class="header">
         <span class="header_text">FashionablyLate</span>
+        @yield('link')
     </header>
     <main>
         @yield('content')
