@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactRequest;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -11,9 +12,27 @@ class ContactController extends Controller
         return view("index");
     }
 
-    public function confirm()
+    public function confirm(ContactRequest $request)
     {
-        return view("confirm");
+        $contact = $request->only([
+            "first_name",
+            "last_name",
+            "gender",
+            "email",
+            "tel1",
+            "tel2",
+            "tel3",
+            "address",
+            "building",
+            "category",
+            "content",
+        ]);
+        return view("confirm", compact("contact"));
+
+        if ($request->input('back') == 'back')
+        {
+            return redirect('/') -> withInput();
+        }
     }
 
     public function thanks()

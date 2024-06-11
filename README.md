@@ -20,7 +20,7 @@
 3. リモートリポジトリとローカルリポジトリの紐付け
 4. `docker-compose up -d --build`
 
-**Larabel環境構築**
+**Laravel環境構築**
 1. `docker-compose exec php bash`：PHPコンテナにログイン
 2. `composer install`：composerのインストール
 3. .env.exampleファイルから.envファイルを作成し、環境変数を設定

@@ -37,15 +37,25 @@
 }
 
 .form__error {
-    height: 20px;
+    height: 25px;
+    font-size: 14px;
+    font-family: Inika;
     color: #ff0000;
     text-align: left;
+}
+
+.form__input--name,
+.form__input--tel {
+    width: 618.82px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .form__input--name input{
     width: 287.15px;
     height: 38px;
     font-size: 14px;
+    font-family: Inika;
     border: none;
     background-color: #F4F4F4;
     border-radius: 3px;
@@ -53,11 +63,12 @@
     appearance: none;
 }
 
-.form__input--gender,
+.form__input--gender {
+    width: 618.82px;
+    text-align: left;
+}
+
 .form__input--gender input {
-    /* width: 500px; */
-    /* display: flex; */
-    /* justify-content: space-between; */
     height: 26px;
     font-size: 14px;
     border: none;
@@ -69,12 +80,17 @@
     width: 178.12px;
     height: 38px;
     font-size: 14px;
+    font-family: Inika;
     border: none;
     background-color: #F4F4F4;
     border-radius: 3px;
     color: #8B7969;
     appearance: none;
 }
+
+/* .form__group--category {
+    text-align: left;
+} */
 
 .form__input--category,
 .form__input--category option {
