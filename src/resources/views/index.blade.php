@@ -43,7 +43,7 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--gender">
-                        <input type="radio" name="gender" value="gender1" {{old("gender") == "gender1" ? "checked" : "" }}checked/>男性
+                        <input type="radio" name="gender" value="男性" {{old("gender") == "gender1" ? "checked" : "" }}checked/>男性
                         <input type="radio" name="gender" value="gender2" {{old("gender") == "gender2" ? "checked" : "" }}/>女性
                         <input type="radio" name="gender" value="gender3" {{old("gender") == "gender3" ? "checked" : "" }}/>その他
                     </div>
