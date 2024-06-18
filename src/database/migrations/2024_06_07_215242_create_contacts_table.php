@@ -17,7 +17,7 @@ class CreateContactsTable extends Migration
             $table->id();
             $table->integer("category_id");
             $table->string("first_name", 255);
-            $table->string("last_name");
+            $table->string("last_name", 255);
             $table->tinyInteger("gender");
             $table->string("email", 255);
             $table->string("tell", 255);

@@ -17,25 +17,25 @@
             <p>Register</p>
         </div>
         
-        <form class="form_register">
+        <form class="form_register" action="/login" method="post">
+            @csrf
             <div class="register_card_inner">
-                <div class="email">
-                    <p class="email_text">お名前</p>
-                    <input type="text" name="name" placeholder="例:山田　太郎" />
+                <div class="name">
+                    <p class="name_text">お名前</p>
+                    <input type="text" name="name" placeholder="例:山田太郎" value="{{ old('name') }}"/>
                 </div>
                 <div class="email">
                     <p class="email_text">メールアドレス</p>
-                    <input type="email" name="email" placeholder="例:test@example.com" />
+                    <input type="email" name="email" placeholder="例:test@example.com" value="{{ old('email') }}"/>
                 </div>
                 <div class="password">
                     <p class="password_text">パスワード</p>
-                    <input type="text" name="password" placeholder="例: coachtech1106" />
+                    <input type="text" name="password" placeholder="例:coachtech1106" />
                 </div>
                 <div class="register_button">
                     <button class="register_button_text" type="submit">登録</button>
                 </div>
             </div>
         </form>
-
     </div>    
 @endsection

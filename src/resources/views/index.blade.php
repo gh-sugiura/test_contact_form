@@ -21,8 +21,8 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--name">
-                        <input type="text" name="first_name" placeholder="例:山田" value="{{old("first_name")}}"/>
-                        <input type="text" name="last_name" placeholder="例:太郎" value="{{old("last_name")}}"/>
+                        <input type="text" name="last_name" placeholder="例:山田" value="{{old("last_name")}}"/>
+                        <input type="text" name="first_name" placeholder="例:太郎" value="{{old("first_name")}}"/>
                     </div>
                     <div class="form__error">
                         @error("first_name")
@@ -43,9 +43,9 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--gender">
-                        <input type="radio" name="gender" value="男性" {{old("gender") == "gender1" ? "checked" : "" }}checked/>男性
-                        <input type="radio" name="gender" value="gender2" {{old("gender") == "gender2" ? "checked" : "" }}/>女性
-                        <input type="radio" name="gender" value="gender3" {{old("gender") == "gender3" ? "checked" : "" }}/>その他
+                        <input type="radio" name="gender" value="1" {{old("gender") == "gender1" ? "checked" : "" }}checked/>男性
+                        <input type="radio" name="gender" value="2" {{old("gender") == "gender2" ? "checked" : "" }}/>女性
+                        <input type="radio" name="gender" value="3" {{old("gender") == "gender3" ? "checked" : "" }}/>その他
                     </div>
                     <div class="form__error">
                         @error("gender")
@@ -80,21 +80,21 @@
                     <span class="form__label--required">※</span>
                 </div>
                 <div class="form__group-content">
-                    <div class="form__input--tel">
-                        <input type="text" name="tel1" placeholder="090" value="{{old("tel1")}}"/>
+                    <div class="form__input--tell">
+                        <input type="text" name="tell1" placeholder="090" value="{{old("tell1")}}"/>
                         <span>-</span>
-                        <input type="text" name="tel2" placeholder="1234" value="{{old("tel2")}}"/>
+                        <input type="text" name="tell2" placeholder="1234" value="{{old("tell2")}}"/>
                         <span>-</span>
-                        <input type="text" name="tel3" placeholder="5678" value="{{old("tel3")}}"/>
+                        <input type="text" name="tell3" placeholder="5678" value="{{old("tell3")}}"/>
                     </div>
                     <div class="form__error">
-                        @error("tel1")
+                        @error("tell1")
                             {{ $message }} 
                         @enderror
-                        @error("tel2")
+                        @error("tell2")
                             {{ $message }} 
                         @enderror
-                        @error("tel3")
+                        @error("tell3")
                             {{ $message }} 
                         @enderror
                     </div>
@@ -140,13 +140,13 @@
                     <span class="form__label--required">※</span>
                 </div>
                 <div class="form__group--category">
-                    <select class="form__input--category" name="category">
+                    <select class="form__input--category" name="category_id">
                         <option selected disabled>選択してください</option>
-                        <option value="category1" @if(old("category")=='category1') selected  @endif>商品のお届けについて</option>
-                        <option value="category2" @if(old("category")=='category2') selected  @endif>商品の交換について</option>
-                        <option value="category3" @if(old("category")=='category3') selected  @endif>商品トラブル</option>
-                        <option value="category4" @if(old("category")=='category4') selected  @endif>ショップへのお問い合わせ</option>
-                        <option value="category5" @if(old("category")=='category5') selected  @endif>その他</option>
+                        <option value="1" @if(old("category_id")=="1") selected  @endif>商品のお届けについて</option>
+                        <option value="2" @if(old("category_id")=="2") selected  @endif>商品の交換について</option>
+                        <option value="3" @if(old("category_id")=="3") selected  @endif>商品トラブル</option>
+                        <option value="4" @if(old("category_id")=="4") selected  @endif>ショップへのお問い合わせ</option>
+                        <option value="5" @if(old("category_id")=="5") selected  @endif>その他</option>
                     </select>
                     <div class="form__error">
                         @error("category")
@@ -164,10 +164,10 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--textarea">
-                        <textarea name="content" placeholder="お問い合わせ内容をご記載ください" value="{{old("content")}}"></textarea>
+                        <textarea name="detail" placeholder="お問い合わせ内容をご記載ください" value="{{old("detail")}}"></textarea>
                     </div>
                     <div class="form__error">
-                        @error("content")
+                        @error("detail")
                             {{ $message }} 
                         @enderror
                     </div>

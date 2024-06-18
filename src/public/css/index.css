@@ -45,7 +45,7 @@
 }
 
 .form__input--name,
-.form__input--tel {
+.form__input--tell {
     width: 618.82px;
     display: flex;
     justify-content: space-between;
@@ -76,7 +76,7 @@
     color: #8B7969;
 }
 
-.form__input--tel input {
+.form__input--tell input {
     width: 178.12px;
     height: 38px;
     font-size: 14px;

@@ -18,6 +18,7 @@
         </div>
         
         <form class="form_login">
+            @csrf
             <div class="login_card_inner">
                 <div class="email">
                     <p class="email_text">メールアドレス</p>

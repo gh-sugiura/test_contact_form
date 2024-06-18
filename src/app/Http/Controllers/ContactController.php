@@ -12,6 +12,7 @@ class ContactController extends Controller
         return view("index");
     }
 
+
     public function confirm(ContactRequest $request)
     {
         $contact = $request->only([
@@ -19,13 +20,14 @@ class ContactController extends Controller
             "last_name",
             "gender",
             "email",
-            "tel1",
-            "tel2",
-            "tel3",
+            // "tell",
+            "tell1",
+            "tell2",
+            "tell3",
             "address",
             "building",
-            "category",
-            "content",
+            "category_id",
+            "detail",
         ]);
         return view("confirm", compact("contact"));
 
@@ -35,10 +37,24 @@ class ContactController extends Controller
         }
     }
 
-    public function thanks()
+
+    public function thanks(Request $request)
     {
+        $contact = $request->only([
+            "first_name",
+            "last_name",
+            "gender",
+            "email",
+            "tell",
+            "address",
+            "building",
+            "category_id",
+            "detail",
+        ]);
+        Contact::create($contact);
         return view("thanks");
     }
+
 
     public function admin()
     {
