@@ -30,11 +30,11 @@
                         <td class="confirm-table__text">
                             <input type="hidden" name="gender" value="{{$contact["gender"]}}" readonly/>
                             @if ($contact["gender"] == 1)
-                                男性
+                                <input value="男性" readonly/>
                             @elseif ($contact["gender"] == 2)
-                                女性
+                                <input value="女性" readonly/>
                             @else
-                                その他
+                                <input value="その他" readonly/>
                             @endif
                         </td>
                     </tr>
@@ -75,15 +75,15 @@
                         <td class="confirm-table__text">
                             <input type="hidden" name="category_id" value="{{$contact["category_id"]}}" readonly/>
                             @if ($contact["category_id"] == 1)
-                                商品のお届けについて
+                                <input value="商品のお届けについて" readonly/>
                             @elseif ($contact["category_id"] == 2)
-                                商品の交換について
+                                <input value="商品の交換について" readonly/>
                             @elseif ($contact["category_id"] == 3)
-                                商品トラブル
+                                <input value="商品トラブル" readonly/>
                             @elseif ($contact["category_id"] == 4)
-                                ショップへのお問い合わせ
+                                <input value="ショップへのお問い合わせ" readonly/>
                             @else
-                                その他
+                                <input value="その他" readonly/>
                             @endif
                         </td>
                     </tr>

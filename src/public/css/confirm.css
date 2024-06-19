@@ -45,8 +45,6 @@
 .confirm-table__text-name {
     display: flex;
     height: 69.92px;
-    /* flex-direction: row; */
-    /* justify-content: flex-start; */
 }
 
 .confirm-table__text-name input {

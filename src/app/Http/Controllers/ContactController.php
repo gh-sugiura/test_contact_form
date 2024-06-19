@@ -20,7 +20,7 @@ class ContactController extends Controller
             "last_name",
             "gender",
             "email",
-            // "tell",
+            "tell",
             "tell1",
             "tell2",
             "tell3",
@@ -30,16 +30,15 @@ class ContactController extends Controller
             "detail",
         ]);
         return view("confirm", compact("contact"));
-
-        if ($request->input('back') == 'back')
-        {
-            return redirect('/') -> withInput();
-        }
     }
 
 
     public function thanks(Request $request)
     {
+        if ($request->input('back') == 'back') {
+            return redirect('/')->withInput();
+        }
+        
         $contact = $request->only([
             "first_name",
             "last_name",
