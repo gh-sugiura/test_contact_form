@@ -1,0 +1,215 @@
+.logout {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 32px;
+    background-color: #F6F6F6;
+    border: 1px solid #D9C6B5;
+}
+
+.logout_link {
+    color: #D9C6B5;
+    text-decoration: none;
+    font-family: Inika;
+}
+
+.admin__content {
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.admin__heading {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Inika;
+    font-size: 35px;
+    color: #8B7969;
+}
+
+.search {
+    width: 1183px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search__input--name input {
+    height: 50px;
+    width: 347.47px;
+    border: 1px solid #E3DED9;
+    background-color: #FBFBFB;
+    font-size: 16px;
+    font-family: Inika;
+    color: #BEB1A6;
+}
+
+.search__input--gender {
+    height: 50px;
+    width: 102.48px;
+    border: 1px solid #E3DED9;
+    background-color: #F4F4F4;
+    font-size: 17px;
+    font-family: Inika;
+    color: #8B7969;
+    text-align: -webkit-center;
+}
+
+.search__input--category {
+    height: 50px;
+    width: 235px;
+    border: 1px solid #E3DED9;
+    background-color: #F4F4F4;
+    font-size: 17px;
+    font-family: Inika;
+    color: #8B7969;
+    text-align: -webkit-center;
+}
+
+.search__input--date {
+    height: 50px;
+    width: 148.87px;
+    border: 1px solid #E3DED9;
+    background-color: #F4F4F4;
+    font-size: 17px;
+    font-family: Inika;
+    color: #8B7969;
+    text-align: -webkit-center;
+}
+
+.search__button--search {
+    height: 50px;
+    width: 102.48px;
+    font-size: 17px;
+    background: #8B7969;
+    color: white;
+    font-family: Inika;
+    border: 1px solid #8B7969;
+    cursor: pointer;
+}
+
+.search__button--reset {
+    height: 50px;
+    width: 102.48px;
+    font-size: 17px;
+    background: #D9C6B5;
+    color: white;
+    font-family: Inika;
+    border: 1px solid #D9C6B5;
+    cursor: pointer;
+}
+
+.function {
+    width: 1183px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.function__export {
+    padding: 30px 0px;
+}
+
+.function__button--export {
+    height: 39px;
+    width: 148px;
+    font-size: 18px;
+    background: #E1DBD6;
+    color: #8B7969;
+    font-family: Inika;
+    border: none;
+    cursor: pointer;
+}
+
+.fuction-pagenation {
+    border: 1px solid #E0DFDE;
+}
+
+.fuction-pagenation:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.fuction-pagenation:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+svg.w-5.h-5 {
+    /*paginateメソッドの矢印の大きさ調整*/
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admin-table__header {
+    height: 59px;
+    width: 1183px;
+    background-color: #8B7969;
+    color: white;
+    font-size: 16px;
+    font-family: Inika;
+    text-align: left;
+}
+
+.admin-table__item {
+    display: flex;
+    align-items: center;
+    height: 72.98px;
+    width: 1183px;
+    color: #8B7969;
+    font-size: 16px;
+    font-family: Inika;
+    text-align: left;
+    border: 1px solid #E0DFDE;
+}
+
+.admin-table__header--name,
+.admin-table__item--name {
+    padding-left: 60px;
+}
+
+.admin-table__header--gender,
+.admin-table__item--gender {
+    padding-left: 120px;
+}
+
+.admin-table__header--email,
+.admin-table__item--email {
+    padding-left: 120px;
+}
+
+.admin-table__header--category,
+.admin-table__item--category {
+    padding-left: 120px;
+}
+
+.admin-table__header--detail,
+.admin-table__button {
+    padding-left: 120px;
+}
+.admin-table__button--detail {
+    height: 39px;
+    width: 76px;
+    font-size: 16px;
+    background-color: white;
+    color: #D9C6B5;
+    font-family: Inika;
+    border: 1px solid #D9C6B5;
+    cursor: pointer;
+}

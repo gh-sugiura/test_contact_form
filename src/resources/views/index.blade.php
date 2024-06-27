@@ -43,9 +43,9 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--gender">
-                        <input type="radio" name="gender" value="1" {{old("gender") == "gender1" ? "checked" : "" }}checked/>男性
-                        <input type="radio" name="gender" value="2" {{old("gender") == "gender2" ? "checked" : "" }}/>女性
-                        <input type="radio" name="gender" value="3" {{old("gender") == "gender3" ? "checked" : "" }}/>その他
+                        <label><input type="radio" name="gender" value="1" {{old("gender") == "gender1" ? "checked" : "" }}checked/>男性</label>
+                        <label><input type="radio" name="gender" value="2" {{old("gender") == "gender2" ? "checked" : "" }}/>女性</label>
+                        <label><input type="radio" name="gender" value="3" {{old("gender") == "gender3" ? "checked" : "" }}/>その他</label>
                     </div>
                     <div class="form__error">
                         @error("gender")

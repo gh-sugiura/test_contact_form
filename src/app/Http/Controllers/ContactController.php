@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
 use App\Models\Contact;
+use App\Models\Category;
+
 
 class ContactController extends Controller
 {
@@ -56,18 +58,28 @@ class ContactController extends Controller
 
 
     public function admin()
-    {
-        return view("admin");
+    {   
+        $contacts = Contact::with("category")->get();
+        $contacts = Contact::Paginate(7);
+        $categories = Category::all();
+        return view("admin", compact("contacts","categories"));
     }
 
+
+    public function modal()
+    {
+        return view('modal');
+    }
+
+    
     public function register()
     {
         return view("register");
     }
 
+
     public function login()
     {
         return view("login");
     }
-
 }
