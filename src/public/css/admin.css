@@ -136,7 +136,7 @@
 }
 
 svg.w-5.h-5 {
-    /*paginateメソッドの矢印の大きさ調整*/
+    /* paginateメソッドの矢印の大きさ調整 */
     width: 30px;
     height: 30px;
 }

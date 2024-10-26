@@ -12,6 +12,7 @@ Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::post('/thanks', [ContactController::class, 'thanks']);
 
 Route::get('/register', [ContactController::class, 'register']);
+Route::get('/login', [ContactController::class, 'login']);
 Route::post('/login', [ContactController::class, 'login']);
 Route::get('/admin', [ContactController::class, 'admin']);
 Route::get('/modal', [ContactController::class, 'modal']);
