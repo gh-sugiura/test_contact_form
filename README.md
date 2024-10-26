@@ -57,3 +57,4 @@
 * ユーザー登録ページ：http://localhost/register
 * ログインページ：http://localhost/login
 * phpMyAdmin：http://localhost:8080/
+* MailHog：http://localhost:8025/
