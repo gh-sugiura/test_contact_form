@@ -121,9 +121,9 @@
     cursor: pointer;
 }
 
-.fuction-pagenation {
+/* .fuction-pagenation {
     border: 1px solid #E0DFDE;
-}
+} */
 
 .fuction-pagenation:first-child {
     border-top-left-radius: 5px;
@@ -140,6 +140,31 @@ svg.w-5.h-5 {
     width: 30px;
     height: 30px;
 }
+
+
+/* .fuction-pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.fuction-pagination li:not(.active) {
+    border: 1px solid #E0DFDE;
+    padding: 4px 12px;
+}
+
+.fuction-pagination li:not(:last-child) {
+    border-right: none;
+}
+
+.fuction-pagination a {
+    color: #8B7969;
+    text-decoration: none;
+}
+
+.fuction-pagination__link {
+    text-decoration: none;
+} */
 
 
 

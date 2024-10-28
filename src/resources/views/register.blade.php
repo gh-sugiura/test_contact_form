@@ -17,7 +17,7 @@
             <p>Register</p>
         </div>
         
-        <form class="form_register" action="/login" method="post">
+        <form class="form_register" action="/register" method="post">
             @csrf
             <div class="register_card_inner">
                 <div class="name">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="password">
                     <p class="password_text">パスワード</p>
-                    <input type="text" name="password" placeholder="例:coachtech1106" />
+                    <input type="password" name="password" placeholder="例:coachtech1106" />
                 </div>
                 <div class="register_button">
                     <button class="register_button_text" type="submit">登録</button>
