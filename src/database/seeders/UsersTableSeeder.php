@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class UsersTableSeeder extends Seeder
 {
@@ -17,6 +18,7 @@ class UsersTableSeeder extends Seeder
             "name" => "sugiura",
             "email" => "sugiura@example.com",
             "password" => bcrypt("sugisugi"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
 
@@ -24,6 +26,7 @@ class UsersTableSeeder extends Seeder
             "name" => "sato",
             "email" => "sato@example.com",
             "password" => bcrypt("satosato"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
 
@@ -31,6 +34,7 @@ class UsersTableSeeder extends Seeder
             "name" => "tanaka",
             "email" => "tanaka@example.com",
             "password" => bcrypt("tanatana"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
 
@@ -38,6 +42,7 @@ class UsersTableSeeder extends Seeder
             "name" => "suzuki",
             "email" => "suzuki@example.com",
             "password" => bcrypt("suzusuzu"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
 
@@ -45,6 +50,7 @@ class UsersTableSeeder extends Seeder
             "name" => "ito",
             "email" => "ito@example.com",
             "password" => bcrypt("itooitoo"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
 
@@ -52,6 +58,7 @@ class UsersTableSeeder extends Seeder
             "name" => "takahashi",
             "email" => "takahashi@example.com",
             "password" => bcrypt("takataka"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
 
@@ -59,6 +66,7 @@ class UsersTableSeeder extends Seeder
             "name" => "watanabe",
             "email" => "watanabe@example.com",
             "password" => bcrypt("watawata"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
 
@@ -66,6 +74,7 @@ class UsersTableSeeder extends Seeder
             "name" => "yamamoto",
             "email" => "yamamoto@example.com",
             "password" => bcrypt("yamayama"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
 
@@ -73,6 +82,7 @@ class UsersTableSeeder extends Seeder
             "name" => "nakamura",
             "email" => "nakamura@example.com",
             "password" => bcrypt("nakanaka"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
 
@@ -80,6 +90,7 @@ class UsersTableSeeder extends Seeder
             "name" => "kobayashi",
             "email" => "kobayashi@example.com",
             "password" => bcrypt("kobakoba"),
+            "email_verified_at" => Carbon::now(),
         ];
         DB::table("users")->insert($param);
     }

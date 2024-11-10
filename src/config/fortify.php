@@ -46,7 +46,7 @@ return [
     |
     */
 
-    'username' => 'name',
+    'username' => 'email',
 
     'email' => 'email',
 
@@ -131,7 +131,7 @@ return [
     |
     */
 
-    'views' => false,
+    'views' => true,
 
     /*
     |--------------------------------------------------------------------------

@@ -1,0 +1,116 @@
+body {
+    background-color: #F1ECE7;
+}
+
+.login {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 32px;
+    background-color: #F6F6F6;
+    border: 1px solid #D9C6B5;
+}
+
+.login_link {
+    color: #D9C6B5;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Inika;
+}
+
+.register {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 32px;
+    background-color: #F6F6F6;
+    border: 1px solid #D9C6B5;
+}
+
+.register_link {
+    font-size: 18px;
+    color: #D9C6B5;
+    text-decoration: none;
+    font-family: Inika;
+}
+
+.login-form__content {
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.login-form__heading {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Inika;
+    font-size: 35px;
+    color: #8B7969;
+}
+
+.confirmation {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    width: 736px;
+    height: 500px;
+    border: 1px solid #C5B9B0;
+    border-radius: 10px;
+}
+
+/* .title,
+.message {
+    padding-left: 150px;
+} */
+
+.title_text {
+    padding-left: 150px;
+    font-family: Inika;
+    font-size: 25px;
+    color: #8B7969;
+}
+
+.message {
+    width: 500px;
+    margin: 60px auto;
+}
+
+.message_text {
+    font-family: Inika;
+    font-size: 22px;
+    color: #8B7969;
+}
+
+.color_area {
+    text-align: center;
+    height: 130px;
+    background-color: #8B7969;
+    display: inline-block;
+}
+
+.color_area_text1 {
+    
+    /* margin-top: 10px; */
+    margin: 10px auto;
+    width: 45px;
+    font-family: Inika;
+    font-size: 30px;
+    color: #8B7969;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    /* margin-inline: 10px; */
+    
+}
+
+.color_area_text2 {
+    font-family: Inika;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}

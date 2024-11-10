@@ -1,3 +1,4 @@
+/* logout button */
 .logout {
     position: absolute;
     right: 100px;
@@ -10,12 +11,18 @@
     border: 1px solid #D9C6B5;
 }
 
-.logout_link {
-    color: #D9C6B5;
+.logout_button {
+    font-size: 18px;
     text-decoration: none;
     font-family: Inika;
+    color: #D9C6B5;
+    background-color: #F6F6F6;
+    border: none;
+    cursor: pointer;
 }
 
+
+/* header search function */
 .admin__content {
     margin: 0 auto;
     max-width: 1230px;
@@ -121,117 +128,66 @@
     cursor: pointer;
 }
 
-/* .fuction-pagenation {
-    border: 1px solid #E0DFDE;
-} */
-
-.fuction-pagenation:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.fuction-pagenation:last-child {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-svg.w-5.h-5 {
-    /* paginateメソッドの矢印の大きさ調整 */
-    width: 30px;
-    height: 30px;
-}
-
-
-/* .fuction-pagination {
-    display: flex;
+.fuction-pagenation {
     justify-content: center;
-    list-style: none;
-}
-
-.fuction-pagination li:not(.active) {
-    border: 1px solid #E0DFDE;
-    padding: 4px 12px;
-}
-
-.fuction-pagination li:not(:last-child) {
-    border-right: none;
-}
-
-.fuction-pagination a {
+    text-align: center;
+    font-size: 25px;
     color: #8B7969;
-    text-decoration: none;
 }
 
-.fuction-pagination__link {
+.fuction-pagenation ul {
+    padding: 3px;
+    border: solid 2px #8B7969;
+    border-radius: 12px;
+}
+
+.fuction-pagenation li {
+    padding: 0px 6px;
+    display: inline-block;
     text-decoration: none;
-} */
+    /* border: solid 1px #8B7969; */
+}
 
 
+/* table */
+.admin__table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 1183px; 
+}
 
+.admin__row {
+    border: 1px solid #E0DFDE;
+}
 
+.admin__label,
+.admin__data {
+    color: #8B7969;
+    font-size: 18px;
+    padding: 12px 8px;
+}
 
+.admin__label:first-of-type,
+.admin__data:first-of-type {
+    padding-left: 48px;
+}
 
+.admin__label:last-of-type,
+.admin__data:last-of-type {
+    padding-right: 36px;
+}
 
-
-
-
-
-
-
-
-
-
-
-.admin-table__header {
-    height: 59px;
-    width: 1183px;
+.admin__label {
     background-color: #8B7969;
-    color: white;
-    font-size: 16px;
-    font-family: Inika;
+    color: #FFF;
     text-align: left;
+    font-weight: 400;
 }
 
-.admin-table__item {
-    display: flex;
-    align-items: center;
-    height: 72.98px;
-    width: 1183px;
-    color: #8B7969;
-    font-size: 16px;
-    font-family: Inika;
-    text-align: left;
-    border: 1px solid #E0DFDE;
-}
-
-.admin-table__header--name,
-.admin-table__item--name {
-    padding-left: 60px;
-}
-
-.admin-table__header--gender,
-.admin-table__item--gender {
-    padding-left: 120px;
-}
-
-.admin-table__header--email,
-.admin-table__item--email {
-    padding-left: 120px;
-}
-
-.admin-table__header--category,
-.admin-table__item--category {
-    padding-left: 120px;
-}
-
-.admin-table__header--detail,
-.admin-table__button {
-    padding-left: 120px;
-}
 .admin-table__button--detail {
     height: 39px;
     width: 76px;
-    font-size: 16px;
+    font-size: 18px;
     background-color: white;
     color: #D9C6B5;
     font-family: Inika;
